@@ -17,7 +17,7 @@ class biTreeNode {
 /*
 * 子树的匹配问题
 * 目前未完成,只实现了创建一棵二叉树
-*
+* test
 * */
 public class SubTreeMatchTest {
     public static void main(String[] args) {
