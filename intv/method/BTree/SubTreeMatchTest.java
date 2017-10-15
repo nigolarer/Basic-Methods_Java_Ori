@@ -17,15 +17,9 @@ class biTreeNode {
 /*
 * 子树的匹配问题
 * 目前未完成,只实现了创建一棵二叉树
-* test
-*
-*
 * */
 public class SubTreeMatchTest {
     public static void main(String[] args) {
-/*        for (int i = 0; i < 100; i++){
-            System.out.print (RandomNum.getRandom(2)+ " ");
-        }*/
         GenerateBTree.setMaxValue(100);
         biTreeNode root = GenerateBTree.getBTree(10);
         System.out.println("final result:\n");
@@ -36,15 +30,5 @@ public class SubTreeMatchTest {
         preOrderTraversalBTree(root);//先序遍历
         System.out.println();
 
-       /* System.out.println();
-        biTreeNode n = new biTreeNode(10);
-        root.rchild = n;
-        n = new biTreeNode(20);
-        root.lchild = n;
-        inOrderTraversalBTree(root);
-        System.out.println();
-        preOrderTraversalBTree(root);//先序遍历
-        System.out.println();
-        postOrderTraversalBTree(root);//后序遍历*/
     }
 }
