@@ -51,7 +51,7 @@ public class longestSubstringWithoutDuplication_48 {
             position[i] = -1;
         }
         for (int i = 0; i < charS.length; i++) {
-            //int lastPos = getLastPos(charS, i);
+            //int lastPos = getLastPos(charS, i);//不申请辅助空间版
             int lastPos = checkLastPos(charS,position,i,1);
             if (lastPos < 0 || i - lastPos > curLen) {//注意这里是大于curLen而非maxLen
                 curLen++;
