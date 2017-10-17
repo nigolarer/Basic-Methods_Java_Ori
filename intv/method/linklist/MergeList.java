@@ -1,4 +1,4 @@
-package intv.method.linkList;
+package intv.method.linklist;
 
 /*//同package中有
 class listNode {

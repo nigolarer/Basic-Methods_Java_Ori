@@ -1,4 +1,4 @@
-package intv.method.Dynamic;
+package intv.method.dynamic;
 
 import java.util.Scanner;
 /*

@@ -1,4 +1,4 @@
-package CodingInterviewJava.Chapter5;
+package codinginterviewjava.chapter5;
 /*
 * mxn的矩阵,数字代表礼物价值,从天左上角开始往右下角移动,每次移动一格,只能往下或者往右,求最大值是多少?
 * 这里首先看到要求的是最大价值而不是路线.
@@ -9,7 +9,8 @@ package CodingInterviewJava.Chapter5;
 * 比如f(i,j-1)这里j-1>=0,i>=0;而f(i-1,j)则是i-1>=0,j>0;这里需要分别判断
 *
 * */
-public class getGiftMaxValue_47 {
+@SuppressWarnings("AlibabaCommentsMustBeJavadocFormat")
+public class GetGiftMaxValue_47 {
     public static void main(String[] args) {
         //giftMatrix
         int[][] giftM=  {
@@ -115,6 +116,7 @@ public class getGiftMaxValue_47 {
         if (giftM == null || row < 0 || col < 0) {
             return 0;
         }
+        return 0;
     }
 
 }

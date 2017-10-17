@@ -1,4 +1,4 @@
-package intv.method.BTree;
+package intv.method.bitree;
 import intv.common.biTreeNode;
 import  intv.util.*;
 import static intv.util.TraversalBTree.*;
@@ -14,6 +14,7 @@ class biTreeNode {
         this.value = value;
     }
 }*/
+
 /*
 * 子树的匹配问题
 * 目前未完成,只实现了创建一棵二叉树

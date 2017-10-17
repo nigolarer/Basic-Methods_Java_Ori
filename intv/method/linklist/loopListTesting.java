@@ -1,4 +1,4 @@
-package intv.method.linkList;
+package intv.method.linklist;
 
 import java.util.Scanner;
 

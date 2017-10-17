@@ -1,5 +1,5 @@
-package CodingInterviewJava.Chapter5;
-/*
+package codinginterviewjava.chapter5;
+/**
 * 剑指offer面试题48最长不含重复字符的子字符串
 * 字符串子串首先不是随便挑几个字符出来就是子字符串,而是相邻的才行比如abcd,那么ab bcd 都是而 ad则不是
 * 看到字符串,看到子字符串,首先想到KMP
@@ -22,14 +22,14 @@ package CodingInterviewJava.Chapter5;
 *
 *
 * */
-public class longestSubstringWithoutDuplication_48 {
+public class LongestSubstringWithoutDuplication_48 {
     public static void main(String[] args) {
         String str = "arabcacfr";
         char[] charS = str.toCharArray();
         int maxLen = getLongestSubStringWithOutDuplication(charS);
         System.out.println("max length is :"+maxLen);
     }
-    /*
+    /**
     * 首先,用来那个个变量,一个是动态记录当前的最大子串的长度,另一个是记录历史最大子串的长度
     * 其次,定义了一个计算当前字符上次出现的位置的函数,这里并没有再申请空间,与书上不同.
     * 如果字符串很长很长那么定义一个辅助空间更划算,我这边getLastPos遍历的话还是容易O(n^2)
@@ -66,7 +66,7 @@ public class longestSubstringWithoutDuplication_48 {
         }
         return maxLen;
     }
-    /*
+    /**
     * 不申请辅助空间版
     * */
     private static int getLastPos(char[] charS, int pos) {
@@ -78,7 +78,7 @@ public class longestSubstringWithoutDuplication_48 {
         }
         return lastPos;
     }
-    /*
+    /**
     * 辅助空间版本的lastPos,direction为1时作为查询,返回lastpos
     * direction不为1时,作为更新position的lastpos
     *

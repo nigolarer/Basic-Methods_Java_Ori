@@ -1,4 +1,4 @@
-package intv.method.basic;
+package intv.method.linklist;
 
 
 import java.util.Scanner;
@@ -21,15 +21,15 @@ class Node {//定义节点
 }
 public class SinglyLinkedListTest {
     public static void main(String[] args) {
-        Node head = new Node(0);
-        addNode(head);
+        Node head = null;
+        head = addNode(head);
         //int pos = findNode(head);
         //System.out.println("pos at:"+pos);
 
        // head = deleteNode(head);
        // showList(head);
        // showListReverse(head);
-        showListReverseRecursion(null);
+        showListReverseRecursion(head);
         
     }
 
@@ -114,18 +114,31 @@ public class SinglyLinkedListTest {
         return -1;
     }
 
-    private static void addNode(Node head) {//添加新节点,这里是用尾插法
+    //添加新节点,这里是用尾插法
+    private static Node addNode(Node head) {
         Scanner scan = new Scanner(System.in);
         int n =scan.nextInt();
-        head.data  = scan.nextInt();
-        if (n > 1) {
-            Node node = new Node(scan.nextInt());
-            head.next = node;
-            for (int i = 2; i < n; i++) {
-                node.next = new Node(scan.nextInt());
+        Node node = head;
+        if (n < 1) {
+            return head;
+        }
+        if (node != null){
+            while (node.next != null) {
                 node = node.next;
             }
+
         }
+        else {
+            head = new Node(scan.nextInt());
+            node = head;
+            n = n - 1;
+        }
+        for (int i = 0; i < n; i++) {
+            node.next = new Node(scan.nextInt());
+            node = node.next;
+        }
+        return head;
+
     }
 
     private static void showList(Node node) {//输出链表
