@@ -13,7 +13,7 @@ public class JudgeUglyNumer_49 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        System.out.println(judgeUglyNumber(n));
+        System.out.println(n+"is ugly number?"+judgeUglyNumber(n));
 
         System.out.println("第"+n+"个丑数是:"+getTheUglyNum(n));
 
@@ -45,7 +45,7 @@ public class JudgeUglyNumer_49 {
         return isUglyNumber;
     }
     /**
-     * 获得第num个丑数
+     * 功能:获得第num个丑数
      * 1.首先将每个丑数都熟顺序的记录下来存放在辅助数组中,根据这个顺序来计算下一个丑数并保存在这个数组中
      * 2.分别定义3个辅助指针,用来根据丑数数组分别生成2,3,5的倍数(由于是根据前面的丑数生成的,所以生成的
      * 新数依然是丑数)
@@ -83,7 +83,10 @@ public class JudgeUglyNumer_49 {
         return uglyNumber[next - 1];
 
     }
-
+    /**
+     * 3个数比较大小
+     * 注意这个3个数比较大小的写法
+     * */
     private static int min(int i, int i1, int i2) {
         int min;
         min = i > i1 ? i1 : i;
