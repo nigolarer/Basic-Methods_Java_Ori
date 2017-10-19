@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * 剑指offer 50题第4个扩展问题:判断变位词(anagram)
  * 所谓变位词就是单词里面的字符个数一样就算如 silent 和 listen evil和live
- * 这里需要用到hash数组来做
+ * 这里需要用到hash数组来做判断
  *
  * */
 public class JudgeSameLetterWord_50_4 {
